@@ -1,0 +1,21 @@
+@startuml
+
+object array {
+    0 = "Apel"
+    1 = "Nanas"
+    2 = "Melon"
+    3 = "Semangka"
+    4 = "Jeruk"
+    5 = "Pepaya"
+    6 = "Anggur"
+}
+object slice {
+    pointer: 2
+    length: 3
+    capacity: 5
+}
+
+slice -left-|> array: reference
+
+note right of slice: array[2:5]\n\nMembuat slice mulai\ndari index 2 hingga sebelum 5
+@enduml
